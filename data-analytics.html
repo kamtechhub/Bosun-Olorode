@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Data Analytics Course - Bosun Olorode</title>
+</head>
+<body>
+    <div class="main-container course-page">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <h1 class="course-title">Data Analytics Mastery</h1>
+        <div id="loading" class="loading-container">
+            <div class="loading-spinner"></div>
+        </div>
+        <div id="courseContent" class="course-content content-hidden">
+            <div class="course-header-image">
+                <img src="IMAGES/data-analytics-header.jpg" alt="Data Analytics Mastery" class="header-image">
+            </div>
+            <div class="course-description">
+                <h2>Course Overview</h2>
+                <p>Master the art of data analytics. Learn essential skills for:</p>
+                <ul>
+                    <li>Data Collection and Cleaning</li>
+                    <li>Statistical Analysis</li>
+                    <li>Data Visualization</li>
+                    <li>Reporting and Insights</li>
+                </ul>
+            </div>
+            <div class="course-modules">
+                <h2>Course Modules</h2>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <h3>1: Excel / Google Sheets</h3>
+                        <p>Master spreadsheet tools for data analysis and visualization</p>
+                        <a href="https://www.youtube.com/watch?v=Vl0H-qTclOg" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>2: SQL (Structured Query Language)</h3>
+                        <p>Database querying and data manipulation</p>
+                        <a href="https://www.youtube.com/watch?v=27axs9dO7AE" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>3: Statistics for Data Analysis</h3>
+                        <p>Statistical concepts and practical applications</p>
+                        <a href="https://www.youtube.com/watch?v=xxpc-HPKN28" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>4: Python for Data Analysis</h3>
+                        <p>Programming fundamentals and data analysis libraries</p>
+                        <a href="https://www.youtube.com/watch?v=vmEHCJofslg" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>5: Power BI</h3>
+                        <p>Creating interactive dashboards and reports</p>
+                        <a href="https://www.youtube.com/watch?v=AGrl-H87pRU" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>6: Data Cleaning & Preprocessing</h3>
+                        <p>Techniques for preparing data for analysis</p>
+                        <a href="https://youtu.be/bDhvCp3_lYw?si=LLz-UwBj7uUrQjy8" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>7: Real-World Projects</h3>
+                        <p>Build your portfolio with practical projects</p>
+                        <a href="https://youtu.be/TC6xYyO320E?si=FHIUmtqWHaIiFOKi" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>8: Job Prep & Interview Skills</h3>
+                        <p>Career guidance and interview preparation</p>
+                        <a href="https://youtu.be/mlCOU8KvAvA?si=72kb-Y9qnCs6Aodx" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('courseContent').classList.remove('content-hidden');
+        });
+    </script>
+</body>
+</html>

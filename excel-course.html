@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Excel Course - Bosun Olorode</title>
+</head>
+<body>
+    <div class="main-container course-page">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <h1 class="course-title">Microsoft Excel Mastery</h1>
+        <div id="loading" class="loading-container">
+            <div class="loading-spinner"></div>
+        </div>
+        <div id="courseContent" class="course-content content-hidden">
+            <div class="course-header-image">
+                <img src="IMAGES/excel-header.jpg" alt="Microsoft Excel Mastery" class="header-image">
+            </div>
+            <div class="course-description">
+                <h2>Course Overview</h2>
+                <p>Master Microsoft Excel from basics to advanced features. Learn essential skills for:</p>
+                <ul>
+                    <li>Data Entry and Formatting</li>
+                    <li>Formulas and Functions</li>
+                    <li>Pivot Tables and Charts</li>
+                    <li>Data Analysis Tools</li>
+                </ul>
+            </div>
+            <div class="course-modules">
+                <h2>Course Modules</h2>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <h3>1: Excel Basics</h3>
+                        <p>Interface, navigation, and basic operations</p>
+                        <a href="https://youtu.be/LgXzzu68j7M?si=tizYf6fe2-fugsJY" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>2: Formulas & Functions</h3>
+                        <p>Essential Excel formulas and functions</p>
+                        <a href="https://youtu.be/Y8xhrUa3KH4?si=PFX3Rtzh7tsVciVz" class="module-button" target="_blank" rel="noopener" >Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>3: Data Analysis</h3>
+                        <p>Pivot tables and data analysis tools</p>
+                        <a href="https://youtu.be/kghcAk7l6eA?si=lbyfswig4Bgl98pZ" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>4: Advanced Features</h3>
+                        <p>Macros, VBA, and advanced functions</p>
+                        <a href="https://youtu.be/PlPgYOFJROI?si=QJoCE0wm3gOQ8tOA" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                    <div class="module-card">
+                        <h3>5: Excel Automation</h3>
+                        <p>Automating tasks and workflows in Excel</p>
+                        <a href="https://youtu.be/IJQHMFLXk_c?si=H8YIr93wxk7TMcO5" class="module-button" target="_blank" rel="noopener">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('courseContent').classList.remove('content-hidden');
+        });
+    </script>
+</body>
+</html>

@@ -107,69 +107,70 @@ body {
     perspective: 1000px;
 }
 
+/* --- Enhanced Social Icon Styles --- */
 .social-icon {
     position: relative;
     color: var(--text-primary);
     font-size: 24px;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s, border-color 0.3s;
     padding: 12px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(79, 70, 229, 0.1));
+    background: rgba(99, 102, 241, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    transform-style: preserve-3d;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 54px;
+    height: 54px;
+    box-shadow: 0 2px 12px 0 rgba(99,102,241,0.10), 0 1.5px 8px 0 rgba(0,0,0,0.08);
+    border: 1.5px solid rgba(255,255,255,0.18);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    overflow: visible;
+    z-index: 1;
 }
 
-.social-icon:hover {
-    transform: translateY(-5px) rotateY(15deg);
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(79, 70, 229, 0.2));
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+.social-icon:hover,
+.social-icon:focus {
+    transform: translateY(-7px) scale(1.08) rotateY(12deg);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.28), rgba(79, 70, 229, 0.22));
+    box-shadow: 0 0 24px 0 var(--accent-color), 0 2px 16px 0 rgba(0,0,0,0.10);
     border-color: var(--accent-color);
+    outline: none;
 }
 
 .social-icon::after {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    animation: pulseRing 2s infinite;
+    border: 2.5px solid var(--accent-color);
     opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    animation: pulseRing 2s infinite;
 }
 
-.social-icon:hover::after {
-    opacity: 1;
+.social-icon:hover::after,
+.social-icon:focus::after {
+    opacity: 0.5;
 }
 
-.fa-facebook:hover {
-    color: #4f46e5;
-}
-
-.fa-instagram:hover {
-    color: #818cf8;
-}
-
-.fa-tiktok:hover {
-    color: #a5b4fc;
-}
-
-.fa-phone:hover {
-    color: #6366f1;
-}
-
-.fa-envelope:hover {
-    color: #818cf8;
-}
-
-.fa-whatsapp:hover {
-    color: #4f46e5;
+@keyframes pulseRing {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1.25);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
 }
 
 /* Enhanced Course Section */
@@ -617,30 +618,6 @@ body {
     }
 }
 
-@keyframes pulseRing {
-    0% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
 /* Enhanced color animations */
 @keyframes colorPulse {
     0% { border-color: rgba(255, 255, 255, 0.1); }
@@ -707,6 +684,7 @@ body {
         width: 40px;
         height: 40px;
         font-size: 18px;
+        padding: 8px;
     }
     
     .course-card {
